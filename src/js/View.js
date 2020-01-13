@@ -70,7 +70,7 @@ class View {
 
     const currentRoute = this._matchUrlToRoute();
 
-    if (currentRoute.template === 'collection' && this.title === '' && this.photosCount === '') {
+    if (currentRoute && currentRoute.template === 'collection' && this.title === '' && this.photosCount === '') {
       const id = initPath.split('/')[2];
       this.getInformation(`/collections/${id}`);
     }
