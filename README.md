@@ -1,2 +1,3 @@
 # viomedia-test
-for viomedia
+
+to start project: **parcel index.html --open**
